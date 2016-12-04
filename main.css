@@ -1,0 +1,174 @@
+body {
+    height:100%;
+    background-color:orange;
+}
+
+#wheel {
+    position: relative;
+    margin:6em auto 0;
+    width:400px;
+    height:400px;
+    border:35px solid #222222;
+    border-radius:50%;
+    z-index: 1;
+    -webkit-box-shadow: 3px 3px 5px black,-3px -3px 5px black;;
+        -moz-box-shadow: 3px 3px 5px black,-3px -3px 5px black;;
+        box-shadow: 3px 3px 5px black,-3px -3px 5px black;;
+}
+
+
+
+#coral, #blue, #yellow, #green {
+    cursor:pointer;
+    width:200px;
+    /*pointer-events:none;*/
+    height:200px;
+    transition:0.5 all ease;
+    outline: none;
+    position:absolute;
+}
+
+#coral{
+    background-color: darkred;
+    border-radius: 0 100% 0 0;
+    left:50%;
+}
+#coral.active{
+    background-color: red;
+}
+
+#blue {
+    background-color: darkblue;
+    border-radius:0 0 100% 0;
+    top:50%;
+    left:50%;
+}
+#blue.active{
+    background-color:blue;
+}
+
+
+#yellow {
+    background-color:darkgoldenrod;
+    border-radius: 100% 0 0 0; 
+    right: 50%;
+}
+
+#yellow.active{
+    background-color:gold;
+}
+
+#green {
+    background-color:darkgreen;
+    border-radius: 0 0 0 100%; 
+    top: 50%;
+    right: 50%;
+}
+
+#green.active {
+    background-color:green;
+}
+
+#horizontal-line{
+    background-color:#222222;
+    width:400px;
+    height:25px;
+    top:50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index:3;
+}
+
+#vertical-line{
+    background-color:#222222;
+    width:25px;
+    height:400px;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index:3;
+}
+
+#inner-circle {
+    border:25px solid #222222;
+    border-radius:50%;
+    background-color:#BBBBBB;
+    position: absolute;
+    top: 50%;
+    width:180px;
+    height:180px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:4;
+}
+
+.title {
+    text-align: center;
+    margin:15% auto 5%;
+}
+
+sup {
+    font-size:0.5em;
+}
+
+.controls {
+    width:75%;
+    height:25%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.controls button {
+    border-radius:50%;
+    outline:none;
+    position: relative;
+    transition:0.2s all;
+    border:2px solid dimgray;
+}
+
+
+
+.controls button, .controls div {
+    width:30px;
+    height:30px;
+}
+
+.screen {
+    border:3px solid dimgray;
+    background-color: #841B2D;
+    color:red;
+    border-radius:15%;
+    width:60%;
+    height:35px;
+    font-weight: bold;
+    font-size:0.9em;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-box-shadow:inset 1px 1px 1px black, inset -1px -1px 1px black;
+    -moz-box-shadow:inset 1px 1px 1px black, inset -1px -1px 1px black;    
+    box-shadow:inset 1px 1px 1px black, inset -1px -1px 1px black;
+}
+.start {
+    background-color: green;
+}
+
+.strict-mode {
+    background-color: yellow;
+}
+
+.controls button{
+    cursor: pointer;
+    -webkit-box-shadow:inset 0 1px 1px #000,1px 1px 2px #333,-1px 0 2px #333;
+    -moz-box-shadow:inset 0 1px 1px #000,1px 1px 2px #333,-1px  0 2px #333;   
+    box-shadow:inset 0 1px 1px #000,1px 1px 2px #333,-1px 0 2px #333;   
+}
+
+.active {
+    
+}
+
+.power {
+    text-align: center;
+}
+
+
